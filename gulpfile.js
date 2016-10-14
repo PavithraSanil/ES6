@@ -9,7 +9,7 @@ var plugins = require('gulp-load-plugins')();
 
 var src = {
 	html: 'app/**/*.html',
-	libs: ['node_modules/angular/angular.min.js','node_modules/angular-route/angular-route.min.js']
+	libs: ['node_modules/angular/angular.min.js','node_modules/angular-route/angular-route.min.js'],
 	css: 'app/**/*.css',
 	scripts: {
 		all: 'app/**/*.js',
@@ -116,6 +116,7 @@ gulp.task('serve', ['build', 'watch'], function() {
 gulp.task('watch', function() {
 	gulp.watch(src.libs, ['libs']);
 	gulp.watch(src.html, ['html']);
+	gulp.watch(src.css, ['css']);
 	gulp.watch(src.scripts.all, ['scripts']);
 })
 
