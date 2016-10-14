@@ -9,7 +9,7 @@ var plugins = require('gulp-load-plugins')();
 
 var src = {
 	html: 'app/**/*.html',
-	libs: 'libs/**',
+	libs: 'node_modules/**/**',
 	css: 'app/**/*.css',
 	scripts: {
 		all: 'app/**/*.js',
