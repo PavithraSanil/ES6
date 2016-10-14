@@ -9,7 +9,7 @@ var plugins = require('gulp-load-plugins')();
 
 var src = {
 	html: 'app/**/*.html',
-	libs: 'node_modules/**/**',
+	libs: ['node_modules/angular/angular.min.js','node_modules/angular-route/angular-route.min.js']
 	css: 'app/**/*.css',
 	scripts: {
 		all: 'app/**/*.js',
@@ -19,7 +19,7 @@ var src = {
 
 var build = 'build/';
 var out = {
-	libs: build + 'node_modules/',
+	libs: build + 'libs/',
 	scripts: {
 		file: 'app.min.js',
 		folder: build + 'scripts/'
