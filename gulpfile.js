@@ -19,7 +19,7 @@ var src = {
 
 var build = 'build/';
 var out = {
-	libs: build + 'libs/',
+	libs: build + 'node_modules/',
 	scripts: {
 		file: 'app.min.js',
 		folder: build + 'scripts/'
